@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <com.mete.yunus.shakevalidate.component.ValidationEditText
+        android:id="@+id/et_valid_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_hint_id"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="#397e62" />
+
+    <com.mete.yunus.shakevalidate.component.ValidationEditText
+        android:id="@+id/et_valid_pw"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_valid_id"
+        android:layout_below="@+id/et_valid_id"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="@string/et_hint_pw"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:textColor="#397e62" />
+
+    <com.mete.yunus.shakevalidate.component.ValidationEditText
+        android:id="@+id/et_valid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_valid_pw"
+        android:layout_below="@+id/et_valid_pw"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="@string/et_hint"
+        android:imeOptions="actionDone"
+        android:inputType="textEmailAddress"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_valid"
+        android:layout_below="@+id/et_valid"
+        android:layout_marginTop="16dp"
+        android:background="#41ab81"
+        android:onClick="onDoneClicked"
+        android:text="@string/st_buton"
+        android:textColor="#fff"
+        android:textColorHint="#c00" />
+
+</RelativeLayout>
